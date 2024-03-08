@@ -1,0 +1,65 @@
+npm can be used to create app
+but it will download the package
+so use npx instead which will temporarily provide the package while you need it
+command->     npx create-react-app my-app    --->   it will create my-app folder having all..modules..,etc.
+
+to run --->  npm start
+
+in react stric mode will always be on -->  StrictMode  -->  "use strict"
+
+JSX :
+(App.js is our site)
+the code is return() --> is JSX
+JSX has html and js can be added to this html using {}
+JS's reserved keyword will be used with different name in html --> ex. --> class will be used as className
+only one element will be returned  --> for that we can use JSX fragment  --->   <></>
+
+Babel
+
+single page and multi page responding
+
+nodemodule folder can be regained by command -->  npm install
+
+git command can be used to add code to github
+
+PROPS :
+
+we are using function based component so there is no need to import react
+
+either add type:"module" in json package or add extention .mjs to module  -->  for module1 and module2 example  --> timestamp 6:28
+
+State :
+{useState} is hook
+state cannot be updated the way we update normal variable
+without reloading page -> function fires
+Event Listening
+
+1. State=condition of any component for eg. textarea component might be empty sometime , sometimes it has letters .
+2. Hooks= A method which helps us to use features of classes in function based component this is because developer like us prefer to use function over classes.
+3. Hooks has this part ---->   const [count,setCount]=useState("Hello Universe"); 
+     Here in above hook the value of count is Hello Universe . count is array variable so that we just can't update or change its value like normal variable. 
+But we can update or change its value using setCount() method. i.e. setCount("Hey You"); this implies the value of count is updated to Hey You.
+Note : Advantages of hooks and this stuff ,  whenever you click Uppercase button page does not reload. Which enhances its capability. 
+
+Alert
+
+onclick needs function not function call
+
+how to dinamically change title
+
+google web masters
+favicon generator
+react router setup  --->  npm install react-router-dom
+page will not reload by using Link-to instead of a-href
+
+deployment of create react app --> github pages  (search on google)
+
+npm run build  --> creats buld folder --> after that only this will be needed to run our website (TextUtils)
+
+you can directly deploy your website on github or can use githubpages
+but router doesn't work with githubpages
+now write code in the package.json file -->  at the top  -->   "homepage": "https://riturajpurohit95.github.io/TextUtils",
+then run --->  npm install --save gh-pages   
+then add these two lines in script of package.json -->   "predeploy": "npm run build",
+                                         "deploy": "gh-pages -d build",
+then run---->   npm run deploy
